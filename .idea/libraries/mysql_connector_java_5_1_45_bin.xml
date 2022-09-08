@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.45-bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/mysql-connector-java-5.1.45-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/standard.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/tomcat-coyote.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/lombok-1.18.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/druid-1.1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/commons-dbutils-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/commons-dbutils-1.4.jar!/" />
+    </SOURCES>
+  </library>
+</component>

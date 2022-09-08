@@ -1,0 +1,2 @@
+userDao=com.hhz.dao.Impl.UserDaoImpl
+userService=com.hhz.service.Impl.UserServiceImpl
