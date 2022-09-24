@@ -6,7 +6,94 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4a94d86-72ca-4cfd-bae5-68e0eaad7a68" name="Changes" comment="" />
+    <list default="true" id="c4a94d86-72ca-4cfd-bae5-68e0eaad7a68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/beans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/IocContainer$BeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/IocContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/controller/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/Impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/CreationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/LoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/ResultInvaildException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/filter/CommonFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/Impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/CodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/DruidUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/js/jquery-1.11.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/js/login/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/beans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/component/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/component/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/component/IocContainer$BeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/component/IocContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/controller/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/Impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/CreationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/LoginException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/ResultInvaildException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/filter/CommonFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/Impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/CodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/DruidUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/beans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/beans.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/component/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/component/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/Impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/Impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/filter/CommonFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/utils/DruidUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/utils/DruidUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/js/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/login/login.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,14 +102,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="jsf" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -32,7 +128,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="2EQzlz93NFcQzLG5tEIHpEfsugy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,68 +139,34 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowServices.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/layui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/hhz/utils" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="service.view.auto.scroll.to.source" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static\layui" />
-      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static\image" />
-      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static\js" />
-      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static" />
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\src\com\hhz\utils" />
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static\image\index" />
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static\image\common" />
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web" />
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\src\com\hhz\pojo\page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\WEB-INF\jsp\admin" />
+      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\WEB-INF\jsp\administrator" />
       <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\WEB-INF\jsp" />
       <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static\layui" />
       <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web\static" />
-      <recent name="D:\yueqian\SecondProject\MuGuangHotel\MuGuangHotel\web" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.43">
-    <configuration name="CodeUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hhz.utils.CodeUtils" />
-      <module name="MuGuangHotel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hhz.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Config" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hhz.component.Config" />
-      <module name="MuGuangHotel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hhz.component.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DruidUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hhz.utils.DruidUtils" />
-      <module name="MuGuangHotel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hhz.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hhz.dao.Impl.UserDaoImpl" />
+    <configuration name="RoomDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hhz.dao.Impl.RoomDaoImpl" />
       <module name="MuGuangHotel" />
       <extension name="coverage">
         <pattern>
@@ -114,12 +178,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hhz.service.Impl.UserServiceImpl" />
+    <configuration name="TurnOverDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hhz.dao.Impl.TurnOverDaoImpl" />
       <module name="MuGuangHotel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hhz.service.Impl.*" />
+          <option name="PATTERN" value="com.hhz.dao.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,9 +191,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MuGuangHotel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hhz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hhz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hhz.test.MainTest" />
+      <option name="METHOD_NAME" value="addUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.getRoomPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MuGuangHotel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hhz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hhz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hhz.test.MainTest" />
+      <option name="METHOD_NAME" value="getRoomPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.viewList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MuGuangHotel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hhz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hhz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hhz.test.ServiceTest" />
+      <option name="METHOD_NAME" value="viewList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/MuGuangHotel/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="MuGuangHotel:war exploded">
           <settings>
@@ -216,20 +326,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DruidUtils" />
-      <item itemvalue="Application.UserServiceImpl" />
-      <item itemvalue="Application.CodeUtils" />
-      <item itemvalue="Application.Config" />
+      <item itemvalue="Application.RoomDaoImpl" />
+      <item itemvalue="Application.TurnOverDaoImpl" />
+      <item itemvalue="JUnit.MainTest.addUserTest" />
+      <item itemvalue="JUnit.MainTest.getRoomPrice" />
+      <item itemvalue="JUnit.ServiceTest.viewList" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.43" />
-      <item itemvalue="Application.UserDaoImpl" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserDaoImpl" />
-        <item itemvalue="Application.DruidUtils" />
-        <item itemvalue="Application.UserServiceImpl" />
-        <item itemvalue="Application.Config" />
-        <item itemvalue="Application.CodeUtils" />
+        <item itemvalue="Application.TurnOverDaoImpl" />
+        <item itemvalue="Application.RoomDaoImpl" />
+        <item itemvalue="JUnit.ServiceTest.viewList" />
+        <item itemvalue="JUnit.MainTest.addUserTest" />
+        <item itemvalue="JUnit.MainTest.getRoomPrice" />
       </list>
     </recent_temporary>
   </component>
@@ -243,11 +353,48 @@
       <updated>1662542755181</updated>
       <workItem from="1662542756665" duration="7326000" />
       <workItem from="1662597526113" duration="11458000" />
-      <workItem from="1662616147278" duration="5110000" />
+      <workItem from="1662616147278" duration="6888000" />
+      <workItem from="1662633531070" duration="6851000" />
+      <workItem from="1662684465463" duration="3829000" />
+      <workItem from="1662737330513" duration="953000" />
+      <workItem from="1662776701965" duration="11468000" />
+      <workItem from="1662805261093" duration="2769000" />
+      <workItem from="1662808077476" duration="6913000" />
+      <workItem from="1662819695964" duration="1054000" />
+      <workItem from="1662859986951" duration="26423000" />
+      <workItem from="1662899517706" duration="75000" />
+      <workItem from="1662899861334" duration="3332000" />
+      <workItem from="1662907611024" duration="1089000" />
+      <workItem from="1662951555430" duration="13404000" />
+      <workItem from="1663033784243" duration="6699000" />
+      <workItem from="1663056143104" duration="4000" />
+      <workItem from="1663057267886" duration="140000" />
+      <workItem from="1663121546194" duration="1915000" />
+      <workItem from="1663138756364" duration="982000" />
+      <workItem from="1663205633083" duration="738000" />
+      <workItem from="1663558298165" duration="696000" />
+      <workItem from="1663567113204" duration="637000" />
+      <workItem from="1663576485519" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

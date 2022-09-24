@@ -3,6 +3,7 @@ package com.hhz.controller;
 import com.hhz.component.BaseController;
 import com.hhz.component.IocContainer;
 import com.hhz.pojo.User;
+import com.hhz.service.CommonService;
 import com.hhz.service.UserService;
 import com.hhz.utils.CodeUtils;
 
@@ -10,15 +11,12 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.net.URLEncoder;
 import java.util.Map;
 
@@ -26,6 +24,7 @@ import java.util.Map;
 public class CommonController extends BaseController {
     //{1}向 IOC 容器获取 userService 对象。
     private UserService userSerivce = (UserService) IocContainer.getBean("userService");
+    private CommonService commonService = (CommonService) IocContainer.getBean("commonService");
 
     //a. showLogin
     public String showLogin(HttpServletRequest req, HttpServletResponse resp)
@@ -34,14 +33,11 @@ public class CommonController extends BaseController {
         return "forward:/login.jsp";
     }
 
-    //b. index
-    public String index(HttpServletRequest req, HttpServletResponse resp)
+    public String loginOut(HttpServletRequest req, HttpServletResponse resp)
             throws IOException, ServletException {
         //内部转发到 /WEB-INF/jsp/login.jsp
-        return "forward:/WEB-INF/jsp/index.jsp";
+        return "redirect:/login.jsp";
     }
-
-
 
     //b. login 方法
     public String login( HttpServletRequest req, HttpServletResponse resp )
@@ -53,15 +49,23 @@ public class CommonController extends BaseController {
         try {
             System.out.println("执行登录");
             //{3}执行登录..
-            User backUser = userSerivce.doLogin(user);
+            User backUser = commonService.doLogin(user);
             if(backUser!=null){
                 System.out.println(backUser.toString());
                 HttpSession session = req.getSession();
-                session.setAttribute("user", user);
+                session.setAttribute("account", user.getAccount());
+                session.setAttribute("role", user.getRoleId());
                 //{ps}在酒店管理系统中, 这里还有代码要写的。
                 // --------留个位置---------
                 //{5}导航到主页
-                retPath = "/Common/index";
+                if(backUser.getRoleId().equals("*")){
+                    retPath = "/Admin/index";
+                }else if(backUser.getRoleId().equals("1")){
+                    retPath = "/Manager/index";
+                }else if(backUser.getRoleId().equals("2")){
+                    retPath = "/User/index";
+                }
+
                 print("用户登录成功..");
             }
         } catch (Exception e) {

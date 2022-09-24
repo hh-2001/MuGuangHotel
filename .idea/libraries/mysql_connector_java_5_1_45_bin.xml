@@ -11,6 +11,8 @@
       <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/druid-1.1.10.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/commons-dbutils-1.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/junit-4.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../javaweb/类包/fastjson-1.2.58.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

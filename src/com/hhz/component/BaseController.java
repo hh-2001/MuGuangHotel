@@ -1,5 +1,6 @@
 package com.hhz.component;
 
+import com.alibaba.fastjson.JSONObject;
 import com.hhz.exception.CreationException;
 import com.hhz.exception.ResultInvaildException;
 
@@ -16,6 +17,12 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @Description: 控制层的祖类，
+ *               (1)返回数据处理，通过json打包数据并write出去
+ * @Author: HHZ
+ * @data: 2022-9-9
+*/
 public abstract class BaseController extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp)
@@ -152,6 +159,7 @@ public abstract class BaseController extends HttpServlet {
         resp.getWriter().write( content );
     }
 
+    //获取处理的controller类
     protected <T> T getBean(HttpServletRequest req, Class<T> clazz ) throws CreationException {
         //{1}获取所有参数【key-val】。
         Map<String, String[]> map = req.getParameterMap();
@@ -204,5 +212,42 @@ public abstract class BaseController extends HttpServlet {
         first = first.toUpperCase();
         return "set"+ first +
                 fName.substring(1, fName.length());
+    }
+
+    //这三个方法用来传递 json 数据给前端
+    //sendError 方法
+    protected String sendError(
+            String result, String cause, int status){
+        JSONObject jsonObj = new JSONObject();
+        jsonObj.put("result", result);
+        jsonObj.put("cause", cause);
+        jsonObj.put("status", status);
+        return jsonObj.toString();
+    }
+
+    //{2}sendData 方法
+    protected String sendData(Object obj){
+        JSONObject jsonObj = new JSONObject();
+        jsonObj.put("result", "success");
+        jsonObj.put("data", obj);
+        jsonObj.put("status", 200);
+        return jsonObj.toString();
+    }
+
+    //{3}sendSuccess 方法
+    protected String sendSuccess(){
+        JSONObject jsonObj = new JSONObject();
+        jsonObj.put("result", "success");
+        jsonObj.put("status", 200);
+        return jsonObj.toString();
+    }
+
+    protected String pageError(Exception e) {
+        //LayUI 需要这些。。
+        JSONObject jsonObj = new JSONObject();
+        jsonObj.put("code", -1);
+        jsonObj.put("msg", e.getMessage());
+        jsonObj.put("count", 0);
+        return jsonObj.toString();
     }
 }

@@ -25,17 +25,17 @@
           style="margin-top: 20px;">
     <legend>用户登录页</legend>
 </fieldset>
-<div class="layui-container">
-    <div class="layui-carousel" id="change">
+<div class="layui-container layui-row">
+    <div class="layui-carousel layui-col-md9" id="change" style="margin: 0">
         <div carousel-item>
-            <div><img src="${ctxPath}/static/image/1.jpg"></div>
-            <div><img src="${ctxPath}/static/image/2.jpg"></div>
-            <div><img src="${ctxPath}/static/image/3.jpg"></div>
-            <div><img src="${ctxPath}/static/image/4.jpg"></div>
-            <div><img src="${ctxPath}/static/image/5.jpg"></div>
+            <div><img src="${ctxPath}/static/image/index/1.jpg" alt="img"/></div>
+            <div><img src="${ctxPath}/static/image/index/2.jpg" alt="img"/></div>
+            <div><img src="${ctxPath}/static/image/index/3.jpg" alt="img"/></div>
+            <div><img src="${ctxPath}/static/image/index/4.jpg" alt="img"/></div>
+            <div><img src="${ctxPath}/static/image/index/5.jpg" alt="img"/></div>
         </div>
     </div>
-    <div class="layui-form">
+    <div class="layui-form layui-col-md3">
         <form action="${ctxPath}/Common/login">
             <div class="layui-form-item">
                 <label class="layui-form-label">用户帐号</label>
@@ -46,7 +46,6 @@
                            class="layui-input">
                 </div>
             </div>
-
             <div class="layui-form-item">
                 <label class="layui-form-label">用户密码</label>
                 <div class="layui-input-block" style="width:450px;">
@@ -64,8 +63,7 @@
                            placeholder="请输入验证码"
                            class="layui-input" />
                 </div>
-                <img src="${ctxPath}/Common/GetCode" onclick="this.src='${ctxPath}/Common/GetCode?' + Math.random()" />
-
+                <label><img src="${ctxPath}/Common/GetCode" onclick="this.src='${ctxPath}/Common/GetCode?' + Math.random()" /></label>
             </div>
             <div class="layui-form-item">
                 <div class="layui-input-block">
@@ -73,17 +71,15 @@
                     <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                 </div>
             </div>
-
         </form>
     </div>
 </div>
-
-
+<div><a href="${ctxPath}/User/doSaveSelf">保存用户</a> </div>
 <%
     String err = request.getParameter("error");
     err = (err == null) ? "" : err;
-%>
 
+%>
 <script>
 
     window.onload = function () {

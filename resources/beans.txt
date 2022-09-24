@@ -1,2 +1,8 @@
 userDao=com.hhz.dao.Impl.UserDaoImpl
+lodgerDao=com.hhz.dao.Impl.LodgerDaoImpl
+roomDao=com.hhz.dao.Impl.RoomDaoImpl
+turnOverDao=com.hhz.dao.Impl.TurnOverDaoImpl
+commonService=com.hhz.service.Impl.CommonServiceImpl
 userService=com.hhz.service.Impl.UserServiceImpl
+roomService=com.hhz.service.Impl.RoomServiceImpl
+lodgerService=com.hhz.service.Impl.LodgerServiceImpl

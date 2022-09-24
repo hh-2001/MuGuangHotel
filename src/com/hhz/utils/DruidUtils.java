@@ -68,26 +68,42 @@ public class DruidUtils {
 
     private static QueryRunner QR = new QueryRunner(dataSource);
     //使用queryRunner
-    public static int update(String sql, Object...args) throws SQLException {
+    public static int update(String sql, String param) throws SQLException {
         Connection conn = getConnection();
-        return QR.update(conn ,sql, args);
+        String[] params = null;
+        if(param != null){
+            params = param.split(",");
+        }
+        return QR.update(conn ,sql, params);
     }
 
     //查询单个对象
-    public static <E> E query(String sql, Class<E> clazz, Object...params) throws SQLException {
+    public static <E> E query(String sql, Class<E> clazz, String param) throws SQLException {
         Connection conn = getConnection();
+        String[] params = null;
+        if(param != null){
+            params = param.split(",");
+        }
         return QR.query(conn, sql, new BeanHandler<>(clazz), params);
     }
 
     //一个对象列表查询
-    public static <E> List<E> selectTableList(String sql, Class<E> clazz, Object...params) throws SQLException {
+    public static <E> List<E> selectTableList(String sql, Class<E> clazz, String param) throws SQLException {
         Connection conn = getConnection();
+        String[] params = null;
+        if(param != null){
+            params = param.split(",");
+        }
         return QR.query(conn, sql, new BeanListHandler<>(clazz), params);
     }
 
     //获取某一列的内容
-    public static Object getValue(String sql, Object...params) throws SQLException {
+    public static Object getValue(String sql, String param) throws SQLException {
         Connection conn = getConnection();
+        String[] params = null;
+        if(param != null){
+            params = param.split(",");
+        }
         return QR.query(conn, sql, new ScalarHandler(), params);
     }
 
