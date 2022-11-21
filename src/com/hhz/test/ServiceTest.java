@@ -1,8 +1,8 @@
 package com.hhz.test;
 
 import com.hhz.component.IocContainer;
-import com.hhz.pojo.page.PageBean;
-import com.hhz.pojo.page.PageParam;
+
+import com.hhz.pojo.PageBean;
 import com.hhz.service.UserService;
 import org.junit.Test;
 

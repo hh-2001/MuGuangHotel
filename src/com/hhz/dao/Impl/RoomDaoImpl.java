@@ -1,61 +1,70 @@
 package com.hhz.dao.Impl;
 
 import com.hhz.dao.RoomDao;
-import com.hhz.exception.UpdateExceptioin;
 import com.hhz.pojo.Room;
-import com.hhz.pojo.RoomType;
-import com.hhz.utils.DaoUtils;
 import com.hhz.utils.DruidUtils;
-import com.hhz.vo.RoomVo;
 
 import java.sql.SQLException;
 import java.util.List;
 
+
+
 public class RoomDaoImpl implements RoomDao {
 
-    @Override
-    public Room getRoom(Room room) throws SQLException, UpdateExceptioin {
-        List<Object> field = DaoUtils.getField(room);
-        String sql = "select * from room where "+field.get(0);
-        DruidUtils.query(sql, Room.class, field.get(1).toString());
-        return null;
-    }
+	@Override
+	public void addRoom(Room room) throws SQLException, IllegalAccessException {
+		// TODO Auto-generated method stub
+		List<Object> field = getField(room);
+		String sql = "insert into room(" + field.get(0).toString().replace("=?", "") + ") values(" + field.get(2) +")";
+		int update = DruidUtils.update(sql, field.get(1).toString());
+		if(update != 1) {
+			throw new SQLException("新增房间失败");
+		}
+	}
 
-    @Override
-    public void updateRoomStatus(Room room, String roomNo) throws SQLException, UpdateExceptioin {
-        List<Object> field = DaoUtils.getField(room);
-        String sql = "update room set ("+field.get(0)+") where roomNo=?";
-        int update = DruidUtils.update(sql, field.get(1) + roomNo);
-        if(update != 1){
-            throw new SQLException("更新客人住房状态失败");
-        }
-    }
+	@Override
+	public void updateRoom(Room room, String id) throws IllegalAccessException, SQLException {
+		List<Object> field = getField(room);
+		String sql = "update room set "+field.get(0).toString()+" where id=?";
+		System.out.println(field.get(1));
+		int update = DruidUtils.update(sql, field.get(1).toString()+id);
+		if(update != 1) {
+			throw new SQLException("房间信息更新失败");
+		}
+	}
 
-    @Override
-    public List<RoomVo> getAllRoom(Integer offset, Integer limit) throws SQLException {
-        String sql = "select m.roomNo,m.typeName,m.`status`,s.floor,s.descript,m.dayPrice,m.hourPrice\n" +
-                "from (select r.storeyId,r.`status`,r.roomNo,rt.typeName,rt.dayPrice,rt.hourPrice from room r left join roomtype rt on r.typeId=rt.id) m \n" +
-                "left join storey s on m.storeyId=s.floor limit " + offset+","+limit;
-        return DruidUtils.selectTableList(sql, RoomVo.class, null);
-    }
+	@Override
+	public void delRoom(String id) throws SQLException {
+		// TODO Auto-generated method stub
+		String sql = "delete from room where id=?";
+		int update = DruidUtils.update(sql, id);
+		if(update != 1) {
+			throw new SQLException("房间信息删除失败");
+		}
+	}
 
-    @Override
-    public int getCount() throws SQLException {
-        String sql = "select count(*) from (select r.storeyId from room r left join roomtype rt on r.typeId=rt.id) m left join storey s on m.storeyId=s.floor";
-        Long value = (Long) DruidUtils.getValue(sql, null);
-        return value.intValue();
-    }
+	@Override
+	public Room getRoomById(String id) throws SQLException {
+		String sql = "select * from view_room where id=?";
+		Room room = DruidUtils.queryObject(sql, Room.class, id);
+		if(room==null) {
+			throw new SQLException("没有此房间");
+		}
+		return room;
+	}
 
-    public static void main(String[] args) throws SQLException {
-        RoomDaoImpl roomDao = new RoomDaoImpl();
-        roomDao.getCount();
-    }
 
-    @Override
-    public RoomType getRoomPrice(String typeId) throws SQLException {
-        String sql = "select * from roomType where id=?";
-        return DruidUtils.query(sql, RoomType.class, typeId);
-    }
+	@Override
+	public List<Room> getRoomList(String sqlPart, Integer offset, Integer limit) throws SQLException {
+		String sql = "select * from view_room where 1=1" + sqlPart +" limit " +offset +","+limit;
+		return DruidUtils.queryList(sql, Room.class, null);
+	}
 
+	@Override
+	public Integer getRoomCount(String sqlPart) throws SQLException {
+		String sql = "select count(*) from view_room where 1=1 "+sqlPart;
+		Long value = (Long) DruidUtils.getValue(sql, null);
+		return value.intValue();
+	}
 
 }

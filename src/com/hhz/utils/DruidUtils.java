@@ -1,131 +1,141 @@
 package com.hhz.utils;
 
-import com.alibaba.druid.pool.DruidDataSourceFactory;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Properties;
+
+import javax.sql.DataSource;
+
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import javax.sql.DataSource;
-import java.io.InputStream;
-import java.sql.*;
-import java.util.List;
-import java.util.Properties;
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+
 
 public class DruidUtils {
+	//{1}声明一个静态属性 ds [数据源]
+	private static DataSource ds;
 
-    private static DataSource dataSource;
+	//{ps}声明一个线程局部变量。
+	//    以后每一个用户线程使用一个数据库连接。[每一请求独享一个连接]
+	//    每一个业务操作专用一个连接，一个事务。
+	private static ThreadLocal<Connection> localVar = new ThreadLocal<>();
 
-    //加载druid的配置信息，创建datasource
-    static {
-        try {
-            Properties properties = new Properties();
-            InputStream is = DruidUtils.class.getClassLoader().getResourceAsStream("druid.properties");
-            properties.load(is);
-            dataSource = DruidDataSourceFactory.createDataSource(properties);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+	static {
+		//{1}获取到当前类的类装载器
+		ClassLoader loader = DruidUtils.class.getClassLoader();
+		//{2}获取源目录下的文件的输入流
+		InputStream is = loader.getResourceAsStream(
+				"druid.properties" );
+		Properties prop = new Properties();
+		try {
+			prop.load( is );   //载入输入流
+			ds = DruidDataSourceFactory
+					.createDataSource( prop );
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-    public static DataSource getDataSource(){
-        return dataSource;
-    }
+	public static Connection getConnection()
+			throws SQLException{
+		//{1}先从局部容器中先获取连接 【本地小仓库】
+		Connection conn = localVar.get();
+		//{2}没有再从【总仓库】获取连接
+		if( conn==null ){
+			conn = ds.getConnection();
+			//{3}再扔进小仓库中
+			localVar.set( conn );
+		}
+		return conn;
+	}
 
-    //获取连接的公共类
-    public static Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
-    }
+	//{ps} 关闭连接。[可以不用]
+	public static void closeConnection()
+			throws SQLException {
+		//{1}先从局部容器中先获取连接 【本地小仓库】
+		Connection conn = localVar.get();
+		if( conn!=null ){
+			//{2}关闭连接。
+			conn.close();
+			//{3}从小仓库中移除这个连接。
+			localVar.remove();
+		}
+	}
 
-    //关闭连接的类
-    public static void close(PreparedStatement pstat, Connection conn){
-        close(pstat, null, conn);
-    }
+	//{ps}关闭资源: RS, PSMT, SMT, Conn。
+	public static void closeRES(AutoCloseable...res)
+			throws SQLException {
+		try{
+			for (AutoCloseable R : res) {
+				R.close();
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+			throw new SQLException("关闭资源失败。");
+		}
+	}
 
-    public static void close(PreparedStatement stmt, ResultSet rs, Connection conn){
-        if (rs != null){
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        if (stmt != null){
-            try {
-                stmt.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        if (conn != null){
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+	private static QueryRunner QR = new QueryRunner();
 
-    private static QueryRunner QR = new QueryRunner(dataSource);
-    //使用queryRunner
-    public static int update(String sql, String param) throws SQLException {
-        Connection conn = getConnection();
-        String[] params = null;
-        if(param != null){
-            params = param.split(",");
-        }
-        return QR.update(conn ,sql, params);
-    }
+	//{1}增， 删， 改方法。[三合一]
+	public static int update(String sql, String param)
+			throws SQLException {
+		Object[] params = null;
+		if(param != null){
+			params = param.split(",");
+		}
+		Connection conn = getConnection();
+		return QR.update(conn, sql, params);
+	}
 
-    //查询单个对象
-    public static <E> E query(String sql, Class<E> clazz, String param) throws SQLException {
-        Connection conn = getConnection();
-        String[] params = null;
-        if(param != null){
-            params = param.split(",");
-        }
-        return QR.query(conn, sql, new BeanHandler<>(clazz), params);
-    }
+	//{2}查询单体对象方法。
+	//  区别: BeanHandler()<User.class>
+	public static <E> E queryObject(String sql,
+									Class<E> clazz, String param)
+			throws SQLException {
+		Object[] params = null;
+		if(param != null){
+			params = param.split(",");
+		}
+		//{1}可以从 ThreadLocal 取连接。(后面)
+		//   也可以从 ds 数据源中取连接。(第一次)
+		Connection conn = getConnection();
+		return QR.query( conn, sql,
+				new BeanHandler<>(clazz), params);
+	}
 
-    //一个对象列表查询
-    public static <E> List<E> selectTableList(String sql, Class<E> clazz, String param) throws SQLException {
-        Connection conn = getConnection();
-        String[] params = null;
-        if(param != null){
-            params = param.split(",");
-        }
-        return QR.query(conn, sql, new BeanListHandler<>(clazz), params);
-    }
+	//{3}查询对象列表方法。
+	//   区别: BeanListHandler()<User.class>
+	public static <E> List<E> queryList(
+			String sql, Class<E> clazz, String param)
+			throws SQLException {
+		Object[] params = null;
+		if(param != null){
+			params = param.split(",");
+		}
+		Connection conn = getConnection();
+		return QR.query( conn, sql, new BeanListHandler<>(clazz), params );
+	}
 
-    //获取某一列的内容
-    public static Object getValue(String sql, String param) throws SQLException {
-        Connection conn = getConnection();
-        String[] params = null;
-        if(param != null){
-            params = param.split(",");
-        }
-        return QR.query(conn, sql, new ScalarHandler(), params);
-    }
+	//{4}查询一个返回值方法。
+	//   区别: ScalarHandler()
+	public static Object getValue( String sql,
+								   String param ) throws SQLException {
+		Connection conn = getConnection();
+		Object[] params = null;
+		if(param != null){
+			params = param.split(",");
+		}
+		return QR.query( conn, sql,
+				new ScalarHandler(), params);
+	}
 
-//    public static void main(String[] args) throws SQLException {
-//        String sql = "select * from user";
-//        Connection conn = getConnection();
-//        BeanListHandler<User> listHandler = new BeanListHandler<>(User.class);
-//        List<User> users = DruidUtils.selectTableList(sql, listHandler, null);
-//        for(User s : users){
-//            System.out.println(s.toString());
-//        }
-//    }
-
-
-//    public static void main(String[] args) throws SQLException {
-//        Connection connection = DruidUtils.getConnection();
-//        String sql = "select * from user";
-//        PreparedStatement statement = connection.prepareStatement(sql);
-//        ResultSet resultSet = statement.executeQuery();
-//        boolean next = resultSet.next();
-//        if (next){
-//            System.out.println(resultSet.getString("id"));
-//        }
-//    }
 }

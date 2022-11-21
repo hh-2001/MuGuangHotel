@@ -8,36 +8,88 @@
   <component name="ChangeListManager">
     <list default="true" id="c4a94d86-72ca-4cfd-bae5-68e0eaad7a68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3c3ace0-88cf-4218-bde6-1cfa2afba245/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MuGuangHotel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MuGuangHotel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/beans.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/BaseController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/Config.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/IocContainer$BeanInfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/component/IocContainer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/controller/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/controller/admin/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/controller/manager/ManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/controller/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/Impl/LodgerDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/Impl/PriceDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/Impl/RoomDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/Impl/TurnOverDaoImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/Impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/LodgerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/PriceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/RoomDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/TurnOverDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/dao/UserDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/CreationException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/LoginException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/ResultInvaildException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/filter/CommonFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/exception/UpdateExceptioin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/BillDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/Lodger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/LodgingInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/RoomType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/Storey.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/page/PageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/pojo/page/PageParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/CommonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/Impl/CommonServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/Impl/LodgerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/Impl/RoomServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/Impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/LodgerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/RoomService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/test/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/test/ServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/BaseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/BaseUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/CodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/DaoUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/utils/DruidUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/vo/RoomVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/com/hhz/vo/UserVO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/classes/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/admin/addUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/admin/adminIndex.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/admin/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/admin/updateUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/common/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/common/header.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/manager/managerIndex.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/user/editPass.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/user/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/user/roomList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/jsp/user/userIndex.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/login.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/common/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/common/tou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/index/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/index/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/index/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/index/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/image/index/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/js/form.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/js/jquery-1.11.1.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/js/login/login.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MuGuangHotel_war_exploded/static/layui/css/layui.css" beforeDir="false" />
@@ -61,38 +113,104 @@
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/component/IocContainer$BeanInfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/component/IocContainer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/controller/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/controller/admin/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/controller/manager/ManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/controller/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/Impl/LodgerDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/Impl/PriceDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/Impl/RoomDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/Impl/TurnOverDaoImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/Impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/LodgerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/PriceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/RoomDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/TurnOverDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/dao/UserDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/CreationException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/LoginException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/ResultInvaildException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/filter/CommonFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/exception/UpdateExceptioin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/BillDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/Lodger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/LodgingInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/RoomType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/Storey.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/page/PageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/pojo/page/PageParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/CommonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/Impl/CommonServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/Impl/LodgerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/Impl/RoomServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/Impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/LodgerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/RoomService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/test/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/test/ServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/BaseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/BaseUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/CodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/DaoUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/utils/DruidUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/vo/RoomVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/com/hhz/vo/UserVO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MuGuangHotel/druid.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/beans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/beans.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/druid.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/component/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/component/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/component/Config.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/controller/admin/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/controller/manager/ManagerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/controller/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/Impl/LodgerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/Impl/LodgerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/Impl/RoomDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/Impl/RoomDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/Impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/Impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/LodgerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/LodgerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/RoomDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hhz/filter/CommonFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/exception/CreationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/exception/ResultInvaildException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/exception/ResultInvaildException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/Lodger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/pojo/Lodger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/LodgingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/pojo/LodgingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/pojo/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/RoomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/pojo/RoomType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/Storey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/pojo/Storey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/page/PageBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/pojo/page/PageParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/service/Impl/LodgerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/Impl/LodgerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/service/Impl/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/Impl/RoomServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/service/LodgerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/LodgerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/RoomService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/test/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/test/ServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/utils/BaseFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/utils/BaseFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/utils/CodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/utils/CodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hhz/utils/DaoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/utils/DaoUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hhz/utils/DruidUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hhz/utils/DruidUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/image/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/common/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/common/tou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/index/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/index/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/index/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/index/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/image/index/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/js/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/layui/css/modules/code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/layui/font/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/layui/layui.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +259,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowServices.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/hhz/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../javaweb/类包/junit-4.8.2.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -375,6 +493,7 @@
       <workItem from="1663558298165" duration="696000" />
       <workItem from="1663567113204" duration="637000" />
       <workItem from="1663576485519" duration="31000" />
+      <workItem from="1668994028708" duration="3807000" />
     </task>
     <servers />
   </component>

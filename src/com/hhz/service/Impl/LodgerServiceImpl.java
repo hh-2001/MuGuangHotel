@@ -2,45 +2,69 @@ package com.hhz.service.Impl;
 
 import com.hhz.component.IocContainer;
 import com.hhz.dao.LodgerDao;
-import com.hhz.exception.UpdateExceptioin;
 import com.hhz.pojo.Lodger;
-import com.hhz.pojo.LodgingInfo;
+import com.hhz.service.BaseService;
 import com.hhz.service.LodgerService;
+import com.hhz.utils.DruidUtils;
 
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
-public class LodgerServiceImpl implements LodgerService {
 
-    private LodgerDao lodgerDao = (LodgerDao) IocContainer.getBean("lodgerDao");
 
-    @Override
-    public void udpateLodger(Lodger lodger) throws UpdateExceptioin, SQLException {
-        lodgerDao.udpateLodger(lodger);
-    }
+public class LodgerServiceImpl extends BaseService implements LodgerService {
 
-    @Override
-    public void addLodger(Lodger lodger) throws SQLException, UpdateExceptioin {
-        lodgerDao.addLodger(lodger);
-    }
+	private LodgerDao lodgerDao = (LodgerDao) IocContainer.getBean("lodgerDao");
 
-    @Override
-    public Lodger getLodger(Lodger lodger) throws SQLException {
-        return lodgerDao.getLodger(lodger);
-    }
+	@Override
+	public Lodger getLodgerById(String id, String idCard) throws SQLException {
+		DruidUtils.getConnection();
+		Lodger lodger = lodgerDao.getLodgerById(id, idCard);
+		DruidUtils.closeConnection();
+		return lodger;
+	}
 
-    @Override
-    public void addLodginInfo(LodgingInfo info) throws SQLException, UpdateExceptioin {
-        lodgerDao.addLodginInfo(info);
-    }
+	@Override
+	public void saveLodger(Lodger lodger) throws SQLException, IllegalAccessException {
+		// TODO Auto-generated method stub
+		Connection conn = DruidUtils.getConnection();
+		String id = lodger.getId();
+		String idCard = lodger.getIdCard();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String now = simpleDateFormat.format(System.currentTimeMillis());
+		conn.setAutoCommit(false);
+		try {
+			if(id!=null && idCard!=null) {
+				lodgerDao.updateLodger(lodger);
+			}else{
+				lodger.setId(makeRegisterId(lodger.getPhone(),lodger.getIdCard()));
+				lodger.setCreateDate(now);
+				lodgerDao.addLodger(lodger);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		DruidUtils.closeConnection();
+	}
 
-    @Override
-    public void updateLodgingInfo(LodgingInfo info, String id) throws SQLException, UpdateExceptioin {
-        lodgerDao.updateLodgingInfo(info, id);
-    }
 
-    @Override
-    public List<LodgingInfo> getAllLodgingInfo() throws SQLException {
-        return lodgerDao.getAllLodgingInfo();
-    }
+	@Override
+	public List<Lodger> getAllLodger() throws SQLException {
+		// TODO Auto-generated method stub
+		DruidUtils.getConnection();
+		List<Lodger> lodger = lodgerDao.getAllLodger();
+		DruidUtils.closeConnection();
+		return lodger;
+	}
+
+	@Override
+	public void delLodger(String id, String idCard) throws SQLException {
+		// TODO Auto-generated method stub
+		DruidUtils.getConnection();
+		lodgerDao.delLodger(id, idCard);
+		DruidUtils.closeConnection();
+	}
+
 }

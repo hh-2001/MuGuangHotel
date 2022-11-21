@@ -20,7 +20,7 @@ public abstract class BaseFilter implements Filter{
 		HttpServletResponse _resp = (HttpServletResponse) resp;
 		doFilter(_req, _resp, chain);
 	}
-	
+
 	public abstract void doFilter(HttpServletRequest req, HttpServletResponse resp, FilterChain chain) throws IOException, ServletException ;
-	
+
 }
